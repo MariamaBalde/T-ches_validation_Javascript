@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Kumbh Sans", sans-serif;
+}
+
+body{
+    font-size: 16px;
+}
+
+
+
+
+/* Modal */
+
+.modal-dialog {
+    margin: 0;
+    /* width: 430px; */
+    width: 50px;
+
+}
+
+@media(max-width:375px) {
+    .modal-dialog {
+        /* width: 82px; */
+        width: 50%;
+    }
+
+        .home_wrapper .text-content .boutton .input-group {
+            width: 200px;
+        }
+
+                 .home_wrapper .text-content .boutton .input-group {
+                     width: 100vh;
+                 }
+}
+
+.modal-content {
+    border-radius: 0;
+    height: 100vh;
+    background-color: white;
+    width: 50%;
+}
+
+
+.modal-header {
+    width: 80px;
+    margin: 0 20px;
+    padding-bottom: 14px;
+    border-bottom: none;
+}
+
+.modal-header .btn-close{
+    background: transparent;
+    opacity: 1;
+}
+
+.modal-header i {
+    color: black;
+    font-size: 30px;
+}
+
+.modal-body {
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+    justify-content: flex-start;
+    padding: 2px 0;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.modal-line a {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*------------------------------------------------------------sectio1 home_wrapper---------------------------------------------*/
+
+.home_wrapper .text-content .subtitle{
+font-size: 0.6rem;
+font-weight: bold;
+color: grey;
+}
+
+.home_wrapper .text-content .pricing .btnpourcentage{
+ /* padding: -10px 5px; */
+ padding: 5px 15px;
+ font-size: 0.6rem;
+ /* padding-bottom: 2px; */
+}
+
+
+ .home_wrapper .text-content .baré{
+    color: hsl(219, 9%, 45%)
+ }
+
+
+ .home_wrapper .text-content .boutton .input-group{
+     width: 200px;
+ }
+
+  .home_wrapper .text-content .boutton .input-group .btn {
+     color: hsl(26, 100%, 55%);
+  }
+
+   /* .home_wrapper .text-content .boutton .input-group .panier{
+      background:hsl(26, 100%, 55%) ;
+   } */
+
+
+
