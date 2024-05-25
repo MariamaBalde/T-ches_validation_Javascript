@@ -23,7 +23,7 @@ body{
 
 }
 
-@media(max-width:375px) {
+ @media screen and (min-width:375px) {
     .modal-dialog {
         /* width: 82px; */
         width: 50%;
