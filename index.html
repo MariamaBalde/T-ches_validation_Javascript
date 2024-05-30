@@ -72,21 +72,23 @@
             </div>
           </div>
           <div class="">
-            <ul
-              class="d-flex flex-row justify-content-lg-between gap-3 list-inline align-items-center list-unstyled pt-3"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="#men"
-                  ><img src="images/icon-cart.svg" alt=""></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#men"
-                  ><img
-                    src="images/image-avatar.png"
-                    alt=""
-                    class="img-fluid w-25"
-                /></a>
-              </li>
+            <ul class="d-flex flex-row justify-content-lg-between gap-3 list-inline align-items-center list-unstyled pt-3" >
+              <li class="nav-item"> <a class="nav-link" href="#men"><img src="images/icon-cart.svg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></a></li>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" id="popup1">
+    <div class="modal-content">
+      <div class="modal-header border-bottom" id="head1">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body  py-sm-5 ">
+       <p class="text-center"> Your cart is empty</p>
+      </div>
+    </div>
+  </div>
+</div>
+              <li class="nav-item"><a class="nav-link" href="#men"><img src="images/image-avatar.png" alt="" class="img-fluid w-25"/></a></li>
             </ul>
           </div>
 
@@ -105,9 +107,9 @@
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
+            <div class="modal-dialog"  id="popup">
               <div class="modal-content">
-                  <div class="modal-header position-relative">
+                  <div class="modal-header position-relative" id="head">
         <button type="button" class="btn-close position-absolute  start-0" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                   </div>
                 <div class="modal-body">
@@ -142,19 +144,20 @@
     </header>
     <!-- Navbar section exit -->
 
-    <section class="home_wrapper mt-4" id="collection">
+    <section class="home_wrapper mt-lg-4 mt-sm-0" id="collection">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-6 col-sm-12 p-0">
        <div class="card  w-75 border-0">
-        <div class="card-body">
-        <img src="images/image-product-1.jpg" class="img-fluid rounded-4" alt="">
+        <div class="card-body text-center">
+          <div class="img">
+              <img src="images/image-product-1.jpg" class="img-fluid rounded-4" alt="">
+          </div>
       <div class="button  d-flex mt-2">
-
-        <a href="images/image-product-1-thumbnail.jpg" class="card-link "><img src="images/image-product-1-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3"></a>
-      <a href="images/image-product-2-thumbnail.jpg" class="card-link "><img src="images/image-product-2-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3"></a>
-     <a href="images/image-product-3-thumbnail.jpg" class="card-link "><img src="images/image-product-3-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3 "></a>
-  <a href="images/image-product-4-thumbnail.jpg" class="card-link "><img src="images/image-product-4-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3"></a>
+        <a href="images/image-product-1.jpg" class="card-link "><img src="images/image-product-1-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3"></a>
+      <a href="images/image-product-2.jpg" class="card-link "><img src="images/image-product-2-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3"></a>
+     <a href="images/image-product-3.jpg" class="card-link "><img src="images/image-product-3-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3 "></a>
+  <a href="images/image-product-4.jpg" class="card-link "><img src="images/image-product-4-thumbnail.jpg" alt="" data-group="1"  class="img-fluid rounded-3"></a>
     </div>
   </div>
 </div>
@@ -172,9 +175,9 @@
                           </div>
                           <div class="boutton d-lg-flex flex-lg-row gap-3 d-sm-flex flex-sm-column ">
                             <div class="input-group mb-3">
-                                      <button type="button" class="btn btn-warning"><img src="images/icon-minus.svg" alt=""></button>    
-                                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                     <button type="button" class="btn btn-warning"><img src="images/icon-plus.svg" alt=""></button>
+                                      <button type="button" class="btn btn-warning" id="minus"><img src="images/icon-minus.svg" alt=""></button>    
+                                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="inpuquantity">
+                                     <button type="button" class="btn btn-warning" id="plus"><img src="images/icon-plus.svg" alt=""></button>
                              </div>
                              <div class="shopping">
                                        <button type="button" class="btn  btn-warning panier"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
