@@ -73,21 +73,8 @@
           </div>
           <div class="">
             <ul class="d-flex flex-row justify-content-lg-between gap-3 list-inline align-items-center list-unstyled pt-3" >
-              <li class="nav-item"> <a class="nav-link" href="#men"><img src="images/icon-cart.svg" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></a></li>
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog" id="popup1">
-    <div class="modal-content">
-      <div class="modal-header border-bottom" id="head1">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cart</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body  py-sm-5 ">
-       <p class="text-center"> Your cart is empty</p>
-      </div>
-    </div>
-  </div>
-</div>
+              <li class="nav-item"><a class="nav-link" href="#men"><img src="images/icon-cart.svg" alt=""></a></li>
+
               <li class="nav-item"><a class="nav-link" href="#men"><img src="images/image-avatar.png" alt="" class="img-fluid w-25"/></a></li>
             </ul>
           </div>
@@ -180,8 +167,22 @@
                                      <button type="button" class="btn btn-warning" id="plus"><img src="images/icon-plus.svg" alt=""></button>
                              </div>
                              <div class="shopping">
-                                       <button type="button" class="btn  btn-warning panier" id="addtocart"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
-                             </div>
+                                       <button type="button" class="btn  btn-warning panier" id="addtocart" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+
+                                       <!-- Modal -->
+<div class="modal fade me-2" id="staticBackdrop0" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" id="popup1">
+    <div class="modal-content">
+      <div class="modal-header border-bottom" id="head1">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body  py-sm-5 ">
+       <p class="text-center"> Your cart is empty</p>
+      </div>
+    </div>
+  </div>
+</div>
 
                           </div>
              </div>
