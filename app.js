@@ -9,6 +9,8 @@ $(".button").each(function () {
   });
 });
 
+ let quantityInput = document.getElementById(`inpuquantity`);
+
 let cart = {};
 
 // Décrémenter la valeur de l'input
@@ -18,7 +20,6 @@ document.querySelector("#minus").addEventListener("click", function () {
   //Décrémenter la valeur de l'input pour diminuer le quantity des produits
   quantity--;
   quantityInput.value = quantity;
-
 });
 
 // Incrémenter la valeur de l'input
@@ -28,16 +29,15 @@ document.querySelector("#plus").addEventListener("click", function () {
   //Incrémenter la valeur de l'input pour ajouter le quantity des produits
   quantity++;
   quantityInput.value = quantity;
- 
 });
 
-
+ 
 // L'ajout au panier
 document.querySelector("#addtocart").addEventListener("click", function () {
-  let popup = document.querySelector("#staticBackdrop");
-  if (quantity==="") {
-    popup.style.display = "block";
-  } else {
-  alert("here")
+    let val = document.querySelector("li #valhaut");
+  if (quantityInput.value=="") {
+    val.innerText = quantityInput.value; 
+  }else if (quantityInput.value !=="") {
+        val.innerText = quantityInput.value;
   }
 });
