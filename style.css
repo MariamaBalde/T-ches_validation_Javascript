@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400..700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Kumbh Sans", sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
 }
 
-body{
+body {
     font-size: 16px;
 }
 
@@ -23,23 +23,23 @@ body{
 
 }
 
- @media screen and (min-width:375px) {
+@media screen and (min-width:375px) {
     .modal-dialog {
         /* width: 82px; */
         width: 50%;
     }
 
-        .home_wrapper .text-content .boutton .input-group {
-            width: 200px;
-        }
+    .home_wrapper .text-content .boutton .input-group {
+        width: 200px;
+    }
 
-                 .home_wrapper .text-content .boutton .input-group {
-                     width: 100vh;
-                 }
-                               
+    .home_wrapper .text-content .boutton .input-group {
+        width: 100vh;
+    }
+
 }
 
- #popup .modal-content {
+#popup .modal-content {
     border-radius: 0;
     height: 100vh;
     background-color: white;
@@ -58,7 +58,7 @@ body{
     border-bottom: none;
 }
 
-.modal-header .btn-close{
+.modal-header .btn-close {
     background: transparent;
     opacity: 1;
 }
@@ -96,46 +96,42 @@ body{
 
 /*------------------------------------------------------------sectio1 home_wrapper---------------------------------------------*/
 
-.home_wrapper .text-content .subtitle{
-font-size: 0.6rem;
-font-weight: bold;
-color: grey;
+.home_wrapper .text-content .subtitle {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: grey;
 }
 
-.home_wrapper .text-content .pricing .btnpourcentage{
- /* padding: -10px 5px; */
- padding: 5px 15px;
- font-size: 0.6rem;
- /* padding-bottom: 2px; */
+.home_wrapper .text-content .pricing .btnpourcentage {
+    /* padding: -10px 5px; */
+    padding: 5px 15px;
+    font-size: 0.6rem;
+    /* padding-bottom: 2px; */
 }
 
 
- .home_wrapper .text-content .baré{
+.home_wrapper .text-content .baré {
     color: hsl(219, 9%, 45%)
- }
+}
 
 
- .home_wrapper .text-content .boutton .input-group{
-     width: 200px;
- }
+.home_wrapper .text-content .boutton .input-group {
+    width: 200px;
+}
 
-  .home_wrapper .text-content .boutton .input-group .btn {
-     color: hsl(26, 100%, 55%);
-  }
-   /* .home_wrapper .text-content .boutton .input-group .panier{
+.home_wrapper .text-content .boutton .input-group .btn {
+    color: hsl(26, 100%, 55%);
+}
+
+/* .home_wrapper .text-content .boutton .input-group .panier{
       background:hsl(26, 100%, 55%) ;
    } */
 
-   .card-body img{
+.card-body img {
     width: 100%;
-   }
+}
 
-   
-
-
-
-
- .rounded-pill{
+.rounded-pill {
     /* border: 1px solid orange;
     border-radius: 5px; */
     position: absolute;
@@ -143,12 +139,41 @@ color: grey;
     left: 10px;
     padding: 0 10px;
     font-size: 0.7rem;
+}
+
+
+/* popup */
+
+/* .header_wrapper  .popupcontenu #ppCartEmpty{
+position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
  }
 
+ .popupcontenu #ppCartEmpty .empty{
+position: fixed;
+    top: 60px;
+    right: 67px;
+    width: 0;
+    max-height: 0;
+    z-index: 99;
+ } */
 
 
+/* #ppCart,
+#vide {
+    display: none;
+} */
 
 
+.popupcontenu > div {
+    display: none;
+}
 
-
-
+.popupcontenu > div.active {
+    display: block;
+    /* box-shadow: 0 0 2px #ccc;
+    padding: 1rem 2rem;
+    background-color: #fff; */
+}

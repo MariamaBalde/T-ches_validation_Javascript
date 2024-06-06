@@ -3,3 +3,52 @@ https://www.youtube.com/watch?v=MtscGi8841w
 https://codepen.io/JiiB/pen/xgdOjw
 https://dimsemenov.com/plugins/magnific-popup/documentation.html
 https://dimsemenov.com/plugins/magnific-popup/
+
+
+ let cart = {};
+      const product = 'product1';
+          const quantityInput = document.getElementById(`quantity-${product}`);
+              let quantity = parseInt(quantityInput.value);
+
+
+document.querySelector("#add-product1").addEventListener('click', function() {
+quantity++;
+    quantityInput.value = quantity;
+});
+
+document.querySelector("#reduce-product1").addEventListener('click', function() {
+quantity--;
+    quantityInput.value = quantity;
+});
+    let val = document.querySelector("li #valhaut");
+
+document.querySelector("#addtocart").addEventListener("click", function addcart () {
+  if (quantityInput.value=="") {
+    val.innerText = quantityInput.value; 
+  }else if (quantityInput.value !=="") {
+        val.innerText = quantityInput.value;
+  }
+});
+
+document.querySelector('#result').addEventListener('click',function updateCart() {
+   
+    const price = 125.00; // Exemple de prix, vous pouvez le récupérer dynamiquement
+   const cartItems = document.getElementById('cart-items');
+    cartItems.innerHTML = '';
+    let totalPrice = 0;
+    addcart ();
+
+    for (let product in cart) {
+        const listItem = document.createElement('li');
+        const productTotalPrice = cart[product].val * cart[product].price;
+        listItem.textContent = `${product}: ${cart[product].val} x ${cart[product].price} € = ${productTotalPrice} €`;
+        cartItems.appendChild(listItem);
+        totalPrice += productTotalPrice;
+    }
+
+    document.getElementById('total-price').textContent = totalPrice;
+    
+
+}
+
+)
