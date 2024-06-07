@@ -68,7 +68,7 @@ document
       // cartechargé.classList.add("active");
       $(cartechargé).modal("show");
     } else if (isNaN(valeurrecup) || valeurrecup == 0) {
-      cart[product] = 0;
+      // cart[product] = 0;
       $(cartvide).modal("show");
       // cartvide.classList.add("active");
       // cartechargé.classList.remove("active");

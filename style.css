@@ -11,21 +11,15 @@ body {
     font-size: 16px;
 }
 
-
-
-
 /* Modal */
 
 .modal-dialog {
     margin: 0;
-    /* width: 430px; */
     width: 50px;
-
 }
 
 @media screen and (min-width:375px) {
     .modal-dialog {
-        /* width: 82px; */
         width: 50%;
     }
 
@@ -46,22 +40,14 @@ body {
     width: 50%;
 }
 
-
-
-
-
-
 .modal-header {
-    /* width: 80px;
-    margin: 0 20px;
-    padding-bottom: 14px; */
     border-bottom: none;
 }
 
-/* .modal-header .btn-close {
-    background: transparent;
+.modal-header .btn-close {
+    /* background: transparent; */
     opacity: 1;
-} */
+}
 
 .modal-header i {
     color: black;
@@ -103,10 +89,8 @@ body {
 }
 
 .home_wrapper .text-content .pricing .btnpourcentage {
-    /* padding: -10px 5px; */
     padding: 5px 15px;
     font-size: 0.6rem;
-    /* padding-bottom: 2px; */
 }
 
 
@@ -123,57 +107,15 @@ body {
     color: hsl(26, 100%, 55%);
 }
 
-/* .home_wrapper .text-content .boutton .input-group .panier{
-      background:hsl(26, 100%, 55%) ;
-   } */
 
 .card-body img {
     width: 100%;
 }
 
 .rounded-pill {
-    /* border: 1px solid orange;
-    border-radius: 5px; */
     position: absolute;
     top: -8px;
     left: 10px;
     padding: 0 10px;
     font-size: 0.7rem;
-}
-
-
-/* popup */
-
-/* .header_wrapper  .popupcontenu #ppCartEmpty{
-position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
- }
-
- .popupcontenu #ppCartEmpty .empty{
-position: fixed;
-    top: 60px;
-    right: 67px;
-    width: 0;
-    max-height: 0;
-    z-index: 99;
- } */
-
-
-/* #ppCart,
-#vide {
-    display: none;
-} */
-
-
-.popupcontenu > div {
-    display: none;
-}
-
-.popupcontenu > div.active {
-    display: block;
-    /* box-shadow: 0 0 2px #ccc;
-    padding: 1rem 2rem;
-    background-color: #fff; */
 }
