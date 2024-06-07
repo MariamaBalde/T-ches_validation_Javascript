@@ -52,16 +52,16 @@ body {
 
 
 .modal-header {
-    width: 80px;
+    /* width: 80px;
     margin: 0 20px;
-    padding-bottom: 14px;
+    padding-bottom: 14px; */
     border-bottom: none;
 }
 
-.modal-header .btn-close {
+/* .modal-header .btn-close {
     background: transparent;
     opacity: 1;
-}
+} */
 
 .modal-header i {
     color: black;

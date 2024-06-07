@@ -19,7 +19,8 @@ let quantityInput = document.getElementById(`inpuquantity`);
 let product = "product1";
 let val = document.querySelector("li #valhaut");
 
-let cartvide = document.getElementById("vide");
+// let cartvide = document.getElementById("vide");
+let cartvide = document.getElementById("videmodal");
 let cartechargé = document.getElementById("ppCart");
 
 // Décrémenter la valeur de l'input
@@ -36,10 +37,13 @@ document.querySelector("#minus").addEventListener("click", function () {
 document.querySelector("#plus").addEventListener("click", function () {
   let quantity = parseInt(quantityInput.value);
   //Incrémenter la valeur de l'input pour ajouter le quantity des produits
-  if (!isNaN(quantity)) {
-    quantity++;
-    quantityInput.value = quantity;
-  }
+  // if (quantity!=="") {
+  //   quantity++;
+  //   quantityInput.value = quantity;
+  // }
+
+  quantity++;
+  quantityInput.value = quantity;
 });
 
 // L'ajout au panier
@@ -49,24 +53,26 @@ document.querySelector("#addtocart").addEventListener("click", function () {
 
 // cart
 
+const modals = document.getElementById("exampleModal");
+document.querySelector(".btn").addEventListener("click", function () {
+  $(modals).modal("show");
+});
+
 document
   .querySelector("#cart")
   .addEventListener("click", function updateCart() {
     const valeurrecup = parseInt(val.innerText);
     if (!isNaN(valeurrecup) && valeurrecup > 0) {
       cart[product] = { quantity: valeurrecup, price: 125.0 };
-      cartvide.classList.remove("active");
-      cartechargé.classList.add("active");
-    } else if (isNaN(valeurrecup)) {
+      // cartvide.classList.remove("active");
+      // cartechargé.classList.add("active");
+      $(cartechargé).modal("show");
+    } else if (isNaN(valeurrecup) || valeurrecup == 0) {
       cart[product] = 0;
-      cartvide.classList.add("active");
-      cartechargé.classList.remove("active");
+      $(cartvide).modal("show");
+      // cartvide.classList.add("active");
+      // cartechargé.classList.remove("active");
     }
-    // else {
-    //   cart[product] = undefined;
-    //   cartvide.classList.add("active");
-    //   cartechargé.classList.remove("active");
-    // }
     const cartItems = document.getElementById("quantity");
     cartItems.innerHTML = "";
     let totalPrice = 0;

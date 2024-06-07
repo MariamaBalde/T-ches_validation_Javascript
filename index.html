@@ -140,25 +140,40 @@
       </nav>
       <!-- popup party -->
       <div class="popupcontenu">
-        <div id="vide" class="">
-          <div class="card w-25 border-0 shadow bg-body-tertiary rounded">
-            <h6 class="card-title px-2">Cart</h6>
-            <h6
-              class="card-subtitle mb-2 text-body-secondary border-bottom border-danger-subtle"
-            ></h6>
-            <div class="card-body">
-              <p class="card-text text-center">Your cart is Empty</p>
+        <!-- Modal vide-->
+        <div class="modal" tabindex="-1" id="videmodal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Cart</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body text-center">
+                <p class="fs-6">Your cart is Empty.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div id="ppCart" class="mt-3">
-          <div class="card w-25 border-0 shadow bg-body-tertiary rounded">
-            <h6 class="card-title px-2">Cart</h6>
-            <h6
-              class="card-subtitle mb-2 text-body-secondary border-bottom border-danger-subtle"
-            ></h6>
-            <div class="card-body px-0">
-              <div class="container">
+        <!-- Modal rempli -->
+          <div class="modal" tabindex="-1" id="ppCart">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Cart</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body text-center">
+                 <div class="container">
                 <div class="d-flex flex-row">
                   <div class="">
                     <img
@@ -170,18 +185,17 @@
                   <div class="">
                     <p class="fs-6 para">
                       Fall Limited Edition Sneakers <br /><span id="quantity">
-                        <!-- $125.00 ×<span class="amount"><span class="">3</span> $375.00</span> -->
                       </span>
                       <strong id="amount" class="fw-bold"></strong>
                     </p>
                   </div>
                 </div>
               </div>
-
-              <div class="col-md-12 d-grid gap-2">
+              <div class="d-grid gap-2">
                 <button class="btn btn-warning text-dark" type="button">
                   Checkout
                 </button>
+              </div>
               </div>
             </div>
           </div>
@@ -269,6 +283,7 @@
                     class="form-control text-center"
                     aria-label="Amount (to the nearest dollar)"
                     id="inpuquantity"
+                    value="0"
                   />
                   <button type="button" class="btn btn-warning" id="plus">
                     <img src="images/icon-plus.svg" alt="" />
