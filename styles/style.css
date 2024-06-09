@@ -68,8 +68,6 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-
-
     justify-content: flex-start;
     padding: 2px 0;
     margin-bottom: 14px;
@@ -80,6 +78,10 @@ body {
     font-size: 17px;
     font-weight: bold;
     color: black;
+}
+
+.popupcontenu #ppCart .modal-body .para {
+    font-size: 0.7rem;
 }
 
 
@@ -102,13 +104,6 @@ body {
 }
 
 
-.home_wrapper .text-content .boutton .input-group {
-    width: 200px;
-}
-
-.home_wrapper .text-content .boutton .input-group .btn {
-    color: hsl(26, 100%, 55%);
-}
 
 
 .card-body img {
@@ -122,3 +117,8 @@ body {
     padding: 0 10px;
     font-size: 0.7rem;
 }
+
+/*------------------------------------------------------------Modal styles---------------------------------------------*/
+
+
+
